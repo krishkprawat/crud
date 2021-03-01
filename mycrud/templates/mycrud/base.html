@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="{%static 'mycrud/css/bootstrap.css' %}">
+</head>
+<body>
+ <div class="container mt-5">
+   <h2 class="text-center alert alert-danger"> crud project</h2>
+    {% block content%} {% endblock content%}
+ </div>
+    <script src="{% static 'mycrud/js/bootstrap.js'%}"></script>
+    <script src="{% static 'mycrud/js/jquery.js'%}"></script>
+    <script src="{% static 'mycrud/js/popper.js.js'%}"></script>
+</body>
+</html>
